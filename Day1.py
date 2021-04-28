@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 
 # cv2.waitKey(0)
 # cv2.destroyAllWindows()
-##CV2 imread picture as BGR , so we need to cv2.COLOR_BGR2RGB
+##CV2 imread picture as BGR , so we need to cv2.COLOR_BGR2RGB to matplotlib
 img = cv2.imread('D://ComputerVision//google.png',cv2.IMREAD_UNCHANGED)
 img_rgb  = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 plt.imshow(img_rgb)
